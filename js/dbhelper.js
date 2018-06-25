@@ -153,8 +153,7 @@ class DBHelper {
     return (`/img/${restaurant.photograph}`);
   }
 
-  /**
-   * Map marker for a restaurant.
+   /* Map marker for a restaurant.
    */
    static mapMarkerForRestaurant(restaurant, map) {
     // https://leafletjs.com/reference-1.3.0.html#marker  
