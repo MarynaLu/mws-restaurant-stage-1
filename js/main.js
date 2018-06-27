@@ -177,9 +177,12 @@ createRestaurantHTML = (restaurant) => {
   const more = document.createElement('a');
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
-  li.append(more)
+  var ariaLabel = restaurant.name + 'restaurant view details';
+  more.setAttribute('aria-label', ariaLabel);
+  li.append(more);
 
-  return li
+
+  return li;
 }
 
 /**

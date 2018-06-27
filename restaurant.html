@@ -31,20 +31,20 @@
   <main id="maincontent">
     <!-- Beginning map -->
     <section id="map-container">
-      <div id="map"></div>
+      <div aria-label="map" aria-role="application" id="map"></div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
     <section id="restaurant-container">
-      <h1 id="restaurant-name"></h1>
+      <h1 aria-label="restaurant name" id="restaurant-name"></h1>
 
-      <div class="restaurant-info">
-        <img id="restaurant-img">
-        <p id="restaurant-cuisine"></p>
+      <div aria-label="restaurant info" class="restaurant-info">
+        <img aria-label="restaurant image" id="restaurant-img">
+        <p aria-label="restaurant cuisine" id="restaurant-cuisine"></p>
 
-        <div class="restaurant-details">
-          <p id="restaurant-address"></p>
-          <table id="restaurant-hours"></table>
+        <div aria-label="restaurant details" class="restaurant-details">
+          <p aria-label="restaurant address" id="restaurant-address"></p>
+          <table aria-label="restaurant hours" id="restaurant-hours"></table>
         </div>
     </div>
 
@@ -52,7 +52,7 @@
     <!-- end restaurant -->
     <!-- Beginning reviews -->
     <section id="reviews-container">
-      <ul id="reviews-list"></ul>
+      <ul aria-label="restaurant reviews" id="reviews-list"></ul>
     </section>
     <!-- End reviews -->
   </main>

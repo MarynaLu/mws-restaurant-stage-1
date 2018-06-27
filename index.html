@@ -22,7 +22,7 @@
 
     <section id="map-container">
 
-      <div id="map"></div>
+      <div aria-label="map" aria-role="application" id="map"></div>
     </section>
 
     <section id="filters">
@@ -31,17 +31,17 @@
 
         <h2>Filter Results</h2>
 
-        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+        <select aria-label="select neighborhoods" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
 
-        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+        <select aria-label="select cuisines" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
 
       </div>
 
-      <ul id="restaurants-list"></ul>
+      <ul aria-label="restaurant list" id="restaurants-list"></ul>
     
     </section>
 
@@ -55,13 +55,13 @@
   <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&callback=initMap"></script> -->
 
   <!-- Service worker start-->
- <!--  <script>
+ <script>
     if('serviceWorker' in navigator) {
           navigator.serviceWorker
           .register('sw.js')
           .then(function() { console.log("Service Worker Registered"); });
   }
-  </script> -->
+  </script>
   <!--Service worker end-->
 
   <footer id="footer">
